@@ -10,16 +10,28 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>redis-distributed-look</artifactId>
-<dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
 
     <!--        连接redis -->
+    <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
     <dependency>
         <groupId>redis.clients</groupId>
         <artifactId>jedis</artifactId>
         <version>3.2.0</version>
-        <type>jar</type>
-        <scope>compile</scope>
     </dependency>
+
 
 
 
