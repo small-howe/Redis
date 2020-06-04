@@ -45,7 +45,7 @@ public class RateLimiter {
         pipelined.expire(key,period + 1);
 
         // 执行
-//        pipelined.exec();
+//       pipelined.exec();
         // 关闭
         pipelined.close();
 
@@ -61,7 +61,7 @@ public class RateLimiter {
             RateLimiter rateLimiter = new RateLimiter(s);
             for (int i = 0; i <20 ; i++) {
                 // 5s之内 只能由三次操作
-                System.out.println(rateLimiter.isAllowed("java", "publish", 1, 3));
+                System.out.println(rateLimiter.isAllowed("java", "publish", 1, 2));
 
             }
         });
