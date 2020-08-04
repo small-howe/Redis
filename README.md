@@ -33,9 +33,9 @@ redis-server redis.conf
 ```
 - ### 远程连接
 #### 首先，修改 redis.conf 注释 127.0.0.1 配置文件：
-![sp20200512_212645_405](https://imgkr.cn-bj.ufileos.com/08de90e5-09b7-4f49-b61d-0481e14ccd1d.png)
+![sp20200804_124935_089.png](https://ws1.sinaimg.cn/large/006ywO4egy1gheoo6cn41j31420lqq7j.jpg)
 #### 配置密码 配置后 保存退出 重新启动服务
-![sp20200512_212905_330](https://imgkr.cn-bj.ufileos.com/7453a760-a33d-4b81-b17f-a9e75dd401da.png)
+![sp20200804_125247_909.png](https://ws1.sinaimg.cn/large/006ywO4egy1gheoriljiyj30r50gnwi1.jpg)
 
 ### redis-distributed-look -- 分布式锁
 ```text
